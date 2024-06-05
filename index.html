@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRID</title>
+    
+  <style>
+
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+   body {
+    padding: 10px;
+   }
+    
+   .bx {
+    height: 400px;
+    max-width: 600px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    /* grid-template-columns: repeat(3,100px); */
+    /* grid-template-rows: 1fr 1fr; */
+    /* grid-template-rows: 100px 100px; */
+    /* place-items: end; */
+    /* align-content: center; */
+    /* justify-items: start; */
+    /* column-gap: 10px;
+    row-gap: 5px; */
+   }
+
+   .bx1 {
+    background-color: red;
+    grid-row: span 3;
+   }
+   .bx2 {
+    background-color: blue;
+    /* grid-column: 2/4; */
+    grid-column: span 2;
+    /* grid-row: span 2; */
+   }
+   .bx3 {
+    background-color: brown;
+    /* grid-row: 2/3;
+    grid-column: 1/2; */
+   }
+   .bx4 {
+    background-color: grey;
+   }
+   .bx5 {
+    background-color: pink;
+   }
+   .bx6 {
+    background-color: yellowgreen;
+    grid-row: span 2;
+   }
+   .bx7 {
+    background-color: pink;
+   }
+   .bx8 {
+    background-color: brown;
+   }
+  
+   </style>
+
+</head>
+
+
+<body>
+  <div class="bx">
+    <div class="bx1">
+      <h3>Box1</h3>
+    </div>
+    <div class="bx2">
+      <h3>Box2</h3>
+      </div>
+    <div class="bx3">
+      <h3>Box3</h3>
+    </div>
+    <div class="bx4">
+      <h3>Box4</h3>
+    </div>
+    <div class="bx5">
+      <h3>Box5</h3>
+    </div>
+    <div class="bx6">
+      <h3>Box6</h3>
+    </div>
+    <div class="bx7">
+      <h3>Box7</h3>
+    </div>
+    <div class="bx8">
+      <h3>Box8</h3>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
